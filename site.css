@@ -1,16 +1,1 @@
-#tile-container {
-  width: 90%;
-  margin: auto;
-}
 
-.tile {
-  width: 20%;
-  max-width: 160px;
-  min-width: 100px;
-  margin: 5px;
-  float: left;
-}
-
-img {
-  width: 100%;
-}

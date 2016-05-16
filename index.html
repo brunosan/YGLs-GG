@@ -1,162 +1,161 @@
-
 <!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="keywords" content="">
   <meta name="author" content="">
 
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-  <title>Global goals</title>
+  <title>YGLs on Global goals</title>
 
 
-  <script src="jquery/dist/jquery.min.js"></script>
-  <script src="tabletop/src/tabletop.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/thumbnail-gallery.css" rel="stylesheet">
 
   <link href="site.css" rel="stylesheet">
 
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 </head>
-<body style="">
-  <div class="">
-    <h1 class="">Start</h1>
-    <div class="">
-      <button class="">
-        <span class="">Add your project</span>
-        <span class=""></span>
-      </button>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" >YGLs doing Global Goals</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <button class="btn-success btn btn-default navbar-btn" href="http://bsan.eu/ygls4gg">
+              Send your Project
+              <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+            </button>
+          </li>
+          <li>
+            <a data-toggle="modal" data-target="#about-modal" >About</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
+  </nav>
 
-    <div class="">
-
-      <div id="tile-container">
-
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_01.png" class="icon">
-          </div>
-          <span class="">X projects</span>
+  <!--About Modal -->
+  <div id="about-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">About this page</h4>
         </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_02.png" class="icon">
-          </div>
-          <span class="">X projects</span>
+        <div class="modal-body">
+          <p>This page aggregates all efforts done by YGLs arund the Global Goals.</p>
         </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_03.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_04.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_05.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_06.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_07.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_08.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_09.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_10.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_11.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_12.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_13.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_14.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_15.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_16.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-        <div class="tile" >
-          <div class="tile-content">
-            <img src="images/TGG_Icon_Color_17.png" class="icon">
-          </div>
-          <span class="">X projects</span>
-        </div>
-
-
       </div>
     </div>
   </div>
 
-  <script type="text/javascript">
-  window.onload = function() { init() };
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Goal Modal -->
+    <div id="goal-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myGoalmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Goal X</h4>
+          </div>
+          <div class="modal-body">
+            <p clas="goal">Goal X</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  var public_spreadsheet_url = '1GD_kSSKe_bIdV_AAwAA9IZ-YmGg9V8f4AqWvmVd9xYA';
-  function init() {
-    Tabletop.init( { key: public_spreadsheet_url,
-      callback: showInfo,
-      simpleSheet: true } )
-    }
 
-    function showInfo(data, tabletop) {
-      console.log(data);
-    }
+    <div class="row" id="goal-list">
 
-    </script>
+      <div class="col-lg-12">
+        <h1 class="page-header">Projects per Goal</h1>
+      </div>
+
+      <!-- JQuery adds here the 17 goals template with the modal -->
+
+
+
+    </div>
+
+    <hr>
+
+    <div class="row" id="goal-list">
+
+      <div class="col-lg-12">
+        <h1 class="page-header">Action agents:</h1>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th> <th>Number of projects</th>
+            </tr>
+          </thead>
+          <tbody id="YGLlist">
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Site under construction. See code and send comments on <a href="https://github.com/brunosan/YGLs-GG">Github<a/></p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Tabletop -->
+    <script src="tabletop/tabletop.js"></script>
+
+    <!-- site -->
+    <script src="site.js"></script>
 
   </body>
+
   </html>

@@ -77,7 +77,7 @@ function init() {
           console.log(goal,responseGoal);
           if (goal == responseGoal){
             console.log(goal,response);
-            $( "#GoalList" ).append( "<tr><th scope='row'><a href='"+response.Link+"'>"+response.Title+"</a></th><td>"+response.YGL_PoC+"</td></tr>" );
+            $( "#GoalList" ).append( "<tr><th scope='row'><a href='"+response.Link+"' target='_blank' >"+response.Title+"</a></th><td>"+response.YGL_PoC+"</td></tr>" );
           }
         }
       }

@@ -11,6 +11,7 @@ function init() {
   }
 
   function showInfo(data, tabletop) {
+    console.log("All data response from Google: ");
     console.log(data);
     updateGoals(data);
   }
@@ -41,14 +42,13 @@ function init() {
     //Parse responses filling YGLs and Goals
     for(i = 0; i < data.length; i++) {
       var response = data[i];
-      //console.log(response);
       var responseGoals = response["Global Goal"].split(',');
       YGLs[response["YGL_PoC"]] = ( YGLs[response["YGL_PoC"]] || 0) +1;
       for(j = 0; j < responseGoals.length; j++) {
         var responseGoal = responseGoals[j].trim().split('-')[0].trim();
-        console.log(responseGoals[j]);
+        //console.log(responseGoals[j]);
         Goals[responseGoal] = (Goals[responseGoal] || 0) + 1;
-        console.log(Goals);
+        //console.log(Goals);
       }
       //console.log("DUMP: ",response," Response Goals: ",responseGoals," Goals: ",Goals," YGLS: ",YGLs);
     }
@@ -71,14 +71,14 @@ function init() {
       //Parse responses filling only responses with Goal
       for(i = 0; i < data.length; i++) {
         var response = data[i];
-        //console.log(response);
+        //console.log("response",response);
         var responseGoals = response["Global Goal"].split(',');
         for(j = 0; j < responseGoals.length; j++) {
           var responseGoal = responseGoals[j].trim().split('-')[0];
           responseGoal =("00" + responseGoal).substr(-2,2);
-          console.log(goal,responseGoal);
+          //console.log(goal,responseGoal);
           if (goal == responseGoal){
-            console.log(goal,response);
+            //console.log(goal,response);
             $( "#GoalList" ).append( "<tr><th scope='row'><a href='"+response.Link+"' target='_blank' >"+response.Title+"</a></th><td>"+response.YGL_PoC+"</td></tr>" );
           }
         }

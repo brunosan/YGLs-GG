@@ -74,7 +74,7 @@ function init() {
         //console.log("response",response);
         var responseGoals = response["Global Goal"].split(',');
         for(j = 0; j < responseGoals.length; j++) {
-          var responseGoal = responseGoals[j].trim().split('-')[0];
+          var responseGoal = responseGoals[j].trim().split('-')[0].trim();
           responseGoal =("00" + responseGoal).substr(-2,2);
           //console.log(goal,responseGoal);
           if (goal == responseGoal){

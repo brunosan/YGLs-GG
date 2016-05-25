@@ -45,8 +45,10 @@ function init() {
       var responseGoals = response["Global Goal"].split(',');
       YGLs[response["YGL_PoC"]] = ( YGLs[response["YGL_PoC"]] || 0) +1;
       for(j = 0; j < responseGoals.length; j++) {
-        var responseGoal = responseGoals[j].trim().split('-')[0];
+        var responseGoal = responseGoals[j].trim().split('-')[0].trim();
+        console.log(responseGoals[j]);
         Goals[responseGoal] = (Goals[responseGoal] || 0) + 1;
+        console.log(Goals);
       }
       //console.log("DUMP: ",response," Response Goals: ",responseGoals," Goals: ",Goals," YGLS: ",YGLs);
     }
